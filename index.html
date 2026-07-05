@@ -414,13 +414,88 @@
       footer { padding: 24px; flex-direction: column; text-align: center; }
       .day-modules { grid-template-columns: 1fr; }
     }
+
     @media (max-width: 640px) {
-      .hero h1 { letter-spacing: -2.5px; }
-      .hero-actions { flex-direction: column; align-items: stretch; }
-      .btn-primary, .btn-outline { text-align: center; justify-content: center; }
-      .instructor-stats { gap: 24px; }
-      .waitlist-form { flex-direction: column; }
+      /* NAV */
+      nav { padding: 0 20px; height: 60px; }
+      .nav-logo { font-size: 15px; }
+      .nav-cta { padding: 8px 18px; font-size: 13px; }
+
+      /* HERO */
+      .hero { padding: 48px 20px 48px; }
+      .hero-badge { font-size: 11px; padding: 6px 14px; white-space: nowrap; overflow: hidden; max-width: 100%; }
+      .hero h1 { font-size: 40px; letter-spacing: -2px; line-height: 1.05; margin-bottom: 20px; }
+      .hero-sub { font-size: 16px; margin-bottom: 32px; }
+      .hero-actions { flex-direction: column; align-items: stretch; gap: 12px; }
+      .btn-primary, .btn-outline { text-align: center; justify-content: center; padding: 16px 24px; font-size: 15px; }
+      .trust-strip { gap: 16px; }
+      .trust-item { font-size: 13px; }
+
+      /* INSTRUCTOR */
+      .instructor-section { padding: 56px 20px; }
+      .instructor-inner { gap: 36px; }
+      .instructor-text h2 { font-size: 32px; letter-spacing: -1.5px; }
+      .instructor-text p { font-size: 15px; }
+      .instructor-stats { gap: 20px; flex-wrap: wrap; }
+      .i-stat-num { font-size: 32px; }
+      .i-stat-label { font-size: 12px; }
+      .instructor-card { padding: 28px 24px; }
+      .instructor-name { font-size: 18px; }
+
+      /* SECTIONS */
+      .section { padding: 56px 20px; }
+      .section h2 { font-size: 30px; letter-spacing: -1.5px; }
+      .section > p { font-size: 16px; }
+
+      /* FOR GRID */
+      .for-card { padding: 28px 24px; }
+      .for-icon { font-size: 28px; margin-bottom: 14px; }
+      .for-card h3 { font-size: 17px; }
+      .for-card p { font-size: 13px; }
+
+      /* CURRICULUM */
+      .day-header { padding: 24px 20px; gap: 16px; }
+      .day-num { width: 40px; height: 40px; font-size: 14px; }
+      .day-title { font-size: 18px; }
+      .day-body { padding: 0 20px 28px; }
+      .day-modules { grid-template-columns: 1fr; gap: 12px; }
+      .module { padding: 16px; gap: 12px; }
+      .module h4 { font-size: 13px; }
+      .module p { font-size: 12px; }
+
+      /* OUTCOMES */
+      .outcomes-grid { grid-template-columns: 1fr; gap: 12px; }
+      .outcome-item { padding: 18px; }
+      .outcome-item p { font-size: 14px; }
+
+      /* PRICING */
+      .pricing-section { padding: 56px 20px; }
+      .pricing-inner h2 { font-size: 30px; letter-spacing: -1.5px; }
+      .pricing-grid { gap: 16px; }
+      .price-card { padding: 32px 24px; }
+      .price-amount { font-size: 44px; letter-spacing: -2px; }
+      .price-features li { font-size: 13px; }
+
+      /* FAQ */
+      .faq-q { padding: 20px 20px; font-size: 14px; }
+      .faq-a { padding: 0 20px 20px; font-size: 14px; }
+
+      /* WAITLIST */
+      .waitlist-section { padding: 56px 20px; }
+      .waitlist-inner h2 { font-size: 30px; letter-spacing: -1.5px; }
+      .waitlist-inner p { font-size: 16px; margin-bottom: 28px; }
+      .waitlist-form { flex-direction: column; gap: 10px; }
+      .waitlist-form input, .waitlist-form button { width: 100%; }
       .waitlist-form input { min-width: unset; }
+
+      /* FOOTER */
+      footer { padding: 24px 20px; font-size: 12px; }
+    }
+
+    @media (max-width: 380px) {
+      .hero h1 { font-size: 34px; }
+      .hero-badge { font-size: 10px; }
+      .trust-strip { flex-direction: column; align-items: flex-start; gap: 12px; }
     }
   </style>
 </head>
